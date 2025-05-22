@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f7f8;
+    color: #222;
+    line-height: 1.6;
+  }
+  
+  header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #0f2027;
+    color: #fff;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  button#showToolsBtn {
+    display: block;
+    margin: 1rem auto 2rem auto;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0f2027;
+    background: #00ff99;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px #00ff99cc;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button#showToolsBtn:hover {
+    background: #00cc77;
+    box-shadow: 0 6px 20px #00ff99ee;
+  }
+  
+  #searchInput {
+    display: block;
+    margin: 0 auto 2rem auto;
+    padding: 10px;
+    font-size: 1rem;
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid #0f2027;
+    border-radius: 5px;
+  }
+  
+  #toolsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .tool-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+  
+  .tool-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .tool-name {
+    font-weight: bold;
+    color: #0f2027;
+    font-size: 1.1rem;
+  }
+  
+  .tool-acronym {
+    font-style: italic;
+    color: #555;
+    margin: 0.25rem 0;
+  }
+  
+  .tool-desc {
+    margin-top: 0.5rem;
+    color: #333;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0f2027;
+    color: white;
+    margin-top: 2rem;
+  }
